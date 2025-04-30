@@ -49,7 +49,7 @@ LexAtlas is built using a modular, multi-agent AI architecture orchestrated by *
 | Multi-Agent System        | Azure AI Agent SDK + Semantic Kernel            | Manages task delegation between specialized agents                  |
 | Agent Roles               | Classifier, Retriever, Compliance Checker, Reporter | Each agent has a distinct role in processing legal queries         |
 | Regulation Retrieval      | Azure AI Search       | Finds relevant state-level laws and structured legal data           |
-| Memory Context            | Postgresql Data Layer    | Retains prior interactions for continuity and follow-up             |
+| Memory Context | PostgreSQL Data Layer | Stores and retrieves prior user interactions and agent outputs to maintain conversational context, support multi-turn reasoning, and enable persistent project tracking. |
 | Backend Integration       | Python + asyncio + Chainlit                     | Orchestrates user input, agent execution, and streaming responses   |
 | Authentication            | Chainlit password-based login                   | Protects access for demo purposes                                   |
 
@@ -100,3 +100,29 @@ No legal or technical expertise is needed to use LexAtlas. The system is designe
 
 LexAtlas is an experimental legal assistant and does not provide certified legal advice. It is intended as a decision support tool. For critical legal decisions, consult a licensed attorney.
  
+Here is the updated `README.md` with your additions in English, integrated smoothly into the document under a new technical section after **Hackathon Development Strategy**:
+
+---
+
+### Additional Engineering Strategy and Tools
+
+To strengthen the system’s flexibility and reproducibility, the LexAtlas team implemented several advanced development strategies and tooling:
+
+- **Parallel LangChain Prototype**  
+  Alongside the core version built with Azure AI Agent SDK and Semantic Kernel, we developed a prototype using **LangChain**. This allowed us to evaluate differences in orchestration, agent chaining behavior, and prompt effectiveness between frameworks, providing valuable insights into performance and modularity trade-offs.
+
+- **Azure Infrastructure Automation Scripts**  
+  A suite of Bash and Python scripts was created to automate the provisioning and configuration of Azure services used in the platform:
+  - Azure OpenAI deployment
+  - Azure AI Search creation and indexing
+  - Blob Storage setup and data ingestion
+  - Cognitive Services + AI skillsets for pipeline enrichment  
+  This infrastructure-as-code setup ensured consistent and rapid deployment across environments, streamlining both testing and production workflows.
+
+- **Multi-Configuration LLM Prompt and Agent Management**  
+  We developed tools to manage and test multiple LLM configurations—including agent definitions, prompts, and model variants. This allowed for:
+  - Comparative evaluation of prompt effectiveness
+  - Detection of multi-agent coordination issues
+  - Rapid iteration across model capabilities (e.g., GPT-4o vs. GPT-35-turbo)  
+  This modular approach improved system versatility and helped pinpoint performance bottlenecks and optimization opportunities throughout the agent chain.
+  
