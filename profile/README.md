@@ -92,7 +92,7 @@ This allowed for progressive testing and validation across each layer of functio
 3. Describe your project in plain language (e.g., location, technology, purpose).
 4. Receive a legal summary, list of relevant laws, and risk assessment instantly.
 
-No legal or technical expertise is needed to use LexAtlas. The system is designed to be accessible and actionable for both technical and non-technical users.
+ 
 
 ---
 
