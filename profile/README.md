@@ -126,3 +126,26 @@ To strengthen the system’s flexibility and reproducibility, the LexAtlas team 
   - Rapid iteration across model capabilities (e.g., GPT-4o vs. GPT-35-turbo)  
   This modular approach improved system versatility and helped pinpoint performance bottlenecks and optimization opportunities throughout the agent chain.
   
+  Here is a new section you can append at the end of the updated `README.md` to **explain the final architecture** of LexAtlas, based on all components and refinements developed:
+
+### Final System Architecture Summary
+
+The final architecture of **LexAtlas** integrates a clean, modular, and extensible multi-agent system designed to handle regulatory intelligence tasks with minimal user input. Here's how the system is structured:
+
+![ai-arch](./assets/ai-arch.png)
+
+-  **Central Agent Flow**: User input is parsed by a `Project Classifier Agent`, which feeds into a Semantic Kernel-based orchestrator. This orchestrator delegates tasks to domain-specific agents: `Docs Agent`, `Regulation Retriever`, and `Compliance Checker`. These outputs are then merged into a cohesive report by the `Report Generator`.
+
+-  **Persistent Context**: A PostgreSQL-backed memory layer allows the assistant to maintain project context across sessions, enabling multi-turn legal advisory interactions.
+
+-  **Agent Reconfiguration Layer**: A prompt and model configuration manager was developed to dynamically test variations in prompt styles and LLM configurations, supporting better evaluation of agent performance and reasoning chains.
+
+-  **Deployment Automation**: The infrastructure layer is fully reproducible using custom Bash and Python scripts. These automate provisioning of Azure OpenAI, AI Search, Blob Storage, and skillsets for enrichment pipelines—ensuring ease of redeployment or scaling.
+
+-  **Experimental Flexibility**: A LangChain-based prototype exists in parallel to benchmark different orchestration and tooling approaches, particularly around agent chaining, execution control, and traceability.
+
+-  **Human and Logging Layers**:
+  - **Optional Human-in-the-Loop Checkpoint** for legal expert validation.
+  - **Audit Logging Agent** to track system inputs, outputs, and decisions for future governance and accountability.
+
+This architecture balances cutting-edge AI orchestration with practical compliance needs, creating a system that is not only functional but also adaptable, testable, and legally aware from the ground up.
