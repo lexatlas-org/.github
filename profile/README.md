@@ -48,8 +48,8 @@ LexAtlas is built using a modular, multi-agent AI architecture orchestrated by *
 | Language Model            | Azure OpenAI (GPT-4o)                            | Natural language understanding, classification, summarization       |
 | Multi-Agent System        | Azure AI Agent SDK + Semantic Kernel            | Manages task delegation between specialized agents                  |
 | Agent Roles               | Classifier, Retriever, Compliance Checker, Reporter | Each agent has a distinct role in processing legal queries         |
-| Regulation Retrieval      | Azure AI Search + Azure SQL (or mock DB)        | Finds relevant state-level laws and structured legal data           |
-| Memory Context            | Azure Agent Thread Storage (mocked for now)     | Retains prior interactions for continuity and follow-up             |
+| Regulation Retrieval      | Azure AI Search       | Finds relevant state-level laws and structured legal data           |
+| Memory Context            | Postgresql Data Layer    | Retains prior interactions for continuity and follow-up             |
 | Backend Integration       | Python + asyncio + Chainlit                     | Orchestrates user input, agent execution, and streaming responses   |
 | Authentication            | Chainlit password-based login                   | Protects access for demo purposes                                   |
 
