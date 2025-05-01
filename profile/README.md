@@ -1,9 +1,8 @@
 ## LexAtlas: AI-Powered Legal Assistant for U.S. Regulations
 
-**LexAtlas** is an intelligent, multi-agent legal assistant designed to help users understand which U.S. state-level laws and regulations apply to their projects. It identifies legal risks, recommends next steps, and generates clear legal-technical summaries based on natural language input.
+**LexAtlas** is an intelligent, multi-agent legal assistant designed to help users identify which U.S. state-level laws and regulations may apply to their projects. It transforms legal complexity into actionable insights by extracting relevant regulations, highlighting potential compliance risks, and generating human-readable legal-technical summaries based on natural language input.
 
-LexAtlas is a submission for the [Microsoft AI Agents Hackathon](https://microsoft.github.io/AI_Agents_Hackathon/), showcasing how multi-agent AI systems can simplify legal compliance in complex, regulated environments.
-
+LexAtlas is a submission for the [Microsoft AI Agents Hackathon](https://microsoft.github.io/AI_Agents_Hackathon/), demonstrating how multi-agent AI systems can improve legal situational awareness in complex, regulated environments.
 
 ---
 
@@ -18,14 +17,27 @@ Additionally, you can watch a demonstration of the project on YouTube:
 
 ### What LexAtlas Does
 
-Users can describe their project—such as an energy deployment, infrastructure plan, or environmental initiative—in natural language. LexAtlas will:
+LexAtlas enables users to describe their project—such as an energy deployment, infrastructure plan, or environmental initiative—in natural language. It will:
 
-- Identify the project type and its U.S. jurisdiction.
-- Retrieve relevant laws and regulations.
-- Assess legal or compliance risks.
-- Generate a human-readable legal summary.
+- Detect the project type and applicable jurisdiction.
+- Retrieve relevant state-level laws and policy documents using semantic search.
+- Highlight areas of legal uncertainty or non-compliance risk.
+- Generate a plain-language legal summary suitable for decision support.
 
-The system is especially suited for early-stage planning when legal clarity is needed before contacting regulators or legal counsel.
+LexAtlas is intended to assist **during early-stage planning**, reducing regulatory blind spots before engaging legal counsel.
+
+---
+
+### Legal Disclaimer and Positioning
+
+LexAtlas **does not provide formal legal advice** and is **not a substitute for licensed legal professionals**. Instead, it offers situational legal awareness and pre-consultation intelligence to:
+
+- Help identify applicable regulations early.
+- Improve preparedness for legal consultations.
+- Reduce the cost and time associated with compliance research.
+- Avoid preventable legal missteps by exposing overlooked issues.
+
+The tool is designed to complement—not replace—human legal expertise. For legal decisions that could affect your rights, obligations, or liabilities, always consult a qualified attorney.
 
 ---
 
