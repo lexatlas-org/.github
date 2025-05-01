@@ -171,3 +171,32 @@ The final architecture of **LexAtlas** integrates a clean, modular, and extensib
   - **Audit Logging Agent** to track system inputs, outputs, and decisions for future governance and accountability.
 
 This architecture balances cutting-edge AI orchestration with practical compliance needs, creating a system that is not only functional but also adaptable, testable, and legally aware from the ground up.
+
+
+### Next Steps: Agent Starter Kit Development
+
+To foster broader adoption and accelerate solution development, the LexAtlas team will release a **Starter Kit for Multi-Agent Systems**. This toolkit will encapsulate core architectural patterns, reusable components, and deployment templates inspired by the LexAtlas project.
+
+#### Goals of the Starter Kit:
+
+- **Simplify Agent-Based Development**  
+  Provide ready-to-use scaffolding for building agent workflows using Semantic Kernel and Azure AI Agent SDK.
+
+- **Encourage Experimentation**  
+  Enable developers to explore different orchestration strategies (sequential, parallel, hybrid), swap agent roles, and test prompt variants with minimal setup.
+
+- **Promote Best Practices**  
+  Include examples of secure memory handling, modular agent registration, logging/audit trails, and human-in-the-loop workflows.
+
+- **Facilitate Deployment**  
+  Offer infrastructure-as-code (IaC) templates for deploying core components (e.g., AI Search, PostgreSQL memory, OpenAI endpoints) on Azure or locally via Docker.
+
+#### Kit Components (Planned):
+
+- Predefined agent templates (Classifier, Retriever, Checker, Reporter)
+- Prompt and model configuration manager
+- Chainlit front-end scaffolding
+- Docker + Azure deployment examples
+- Example projects (e.g., legal, compliance, policy analysis)
+
+This Starter Kit will empower developers, researchers, and policy innovators to adapt the multi-agent paradigm to other regulated domains such as healthcare, finance, or environmental policy — significantly reducing time-to-value.
