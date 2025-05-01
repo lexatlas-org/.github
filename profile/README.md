@@ -4,6 +4,16 @@
 
 LexAtlas is a submission for the [Microsoft AI Agents Hackathon](https://microsoft.github.io/AI_Agents_Hackathon/), showcasing how multi-agent AI systems can simplify legal compliance in complex, regulated environments.
 
+
+---
+
+You can explore the source code of the project in the following repositories:  
+- [lexatlas-semantic-kernel](https://github.com/lexatlas-org/lexatlas-semantic-kernel)  
+- [lexatlas-langchain](https://github.com/lexatlas-org/lexatlas-langchain)  
+
+Additionally, you can watch a demonstration of the project on YouTube:  
+[LexAtlas Demo Video](https://youtu.be/VvrS6FgVlLY)  
+
 ---
 
 ### What LexAtlas Does
