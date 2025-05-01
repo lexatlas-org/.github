@@ -122,10 +122,7 @@ This allowed for progressive testing and validation across each layer of functio
 
 LexAtlas is an experimental legal assistant and does not provide certified legal advice. It is intended as a decision support tool. For critical legal decisions, consult a licensed attorney.
  
-Here is the updated `README.md` with your additions in English, integrated smoothly into the document under a new technical section after **Hackathon Development Strategy**:
-
----
-
+ 
 ### Additional Engineering Strategy and Tools
 
 To strengthen the system’s flexibility and reproducibility, the LexAtlas team implemented several advanced development strategies and tooling:
