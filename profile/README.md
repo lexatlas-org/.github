@@ -60,7 +60,8 @@ The tool is designed to complement—not replace—human legal expertise. For le
 
 LexAtlas is built using a modular, multi-agent AI architecture orchestrated by **Azure AI Agent SDK** and **Semantic Kernel**, deployed with **Chainlit** as a front-end interface.
 
-![ai-flow](./assets/ai-flow.png)
+![ai-flow](https://raw.githubusercontent.com/lexatlas-org/.github/refs/heads/main/profile/assets/ai-flow.png)
+
 
 #### Key Components
 
@@ -151,8 +152,8 @@ To strengthen the system’s flexibility and reproducibility, the LexAtlas team 
 
 The final architecture of **LexAtlas** integrates a clean, modular, and extensible multi-agent system designed to handle regulatory intelligence tasks with minimal user input. Here's how the system is structured:
 
-![ai-arch](./assets/ai-arch.png)
-
+![ai-arch](https://raw.githubusercontent.com/lexatlas-org/.github/refs/heads/main/profile/assets/ai-arch.png)
+ 
 -  **Central Agent Flow**: User input is parsed by a `Project Classifier Agent`, which feeds into a Semantic Kernel-based orchestrator. This orchestrator delegates tasks to domain-specific agents: `Docs Agent`, `Regulation Retriever`, and `Compliance Checker`. These outputs are then merged into a cohesive report by the `Report Generator`.
 
 -  **Persistent Context**: A PostgreSQL-backed memory layer allows the assistant to maintain project context across sessions, enabling multi-turn legal advisory interactions.
